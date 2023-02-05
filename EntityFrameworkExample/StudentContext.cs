@@ -18,5 +18,8 @@ namespace EntityFrameworkExample
         {
             options.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=EFCoreExample;Trusted_Connection=True;");
         }
+
+        // Tell EFC to track Students in the database
+        public DbSet<Student> Students { get; set; }
     }
 }
